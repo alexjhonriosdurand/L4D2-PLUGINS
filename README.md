@@ -27,6 +27,7 @@ Ideal para servidores cooperativos que quieren personalizar la dificultad y la e
 
 ## 🛠️ Requisitos
 
+- [Metamod:Source](https://www.metamodsource.net/) 1.12 o superior
 - [SourceMod](https://www.sourcemod.net/) 1.12 o superior
 - Left 4 Dead **1** o Left 4 Dead **2**
 
@@ -34,12 +35,18 @@ Ideal para servidores cooperativos que quieren personalizar la dificultad y la e
 
 ## 📦 Instalación
 
-1. Descarga el archivo `l4d2_control_total_zombie.smx` (compilado) o compila el `.sp` tú mismo.
-2. Copia el archivo `.smx` a la carpeta:
+1. Asegúrate de tener **Metamod:Source** y **SourceMod** instalados correctamente.
+2. Verifica que el archivo `.vdf` de Metamod esté en:
+   ```
+   left4dead2/addons/metamod.vdf
+   ```
+   Sin este archivo Metamod y SourceMod **no cargan**.
+3. Descarga el archivo `l4d2_control_total_zombie.smx` (compilado) o compila el `.sp` tú mismo.
+4. Copia el archivo `.smx` a la carpeta:
    ```
    addons/sourcemod/plugins/
    ```
-3. Reinicia el mapa o escribe `sm plugins load l4d2_control_total_zombie` en la consola.
+5. Reinicia el mapa o escribe `sm plugins load l4d2_control_total_zombie` en la consola.
 
 ---
 
