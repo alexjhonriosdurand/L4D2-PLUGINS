@@ -10,13 +10,13 @@ Este plugin aborda [**menciona brevemente el problema específico que tu plugin 
 
 *   Left 4 Dead 2 (L4D2)
 
-## Vídeo | 影片展示
+## Demostración | 影片展示
 
 Observa el plugin en acción para entender el problema que soluciona y cómo mejora la jugabilidad:
 
-[![Demostración del L4D2 Smoker Tongue Pull Fix](https://i.imgur.com/TU_IMAGEN_THUMBNAIL.png)](https://youtu.be/ndLTthl2Qxk)
+[![L4D2 Smoker Tongue Pull Fix](https://youtu.be/ndLTthl2Qxk)
 
-*(Haz clic en la imagen para ver la demostración en YouTube)*
+*(Haz clic en L4d2 Smoker Tongue Fix para ver la demostración en YouTube)*
 
 ---
 
@@ -25,17 +25,6 @@ Observa el plugin en acción para entender el problema que soluciona y cómo mej
 *   [**Característica 1:**] Describe la solución principal (ej. "Previene que los sobrevivientes disparen mientras son arrastrados").
 *   [**Característica 2:**] Describe otra mejora (ej. "Ajusta la hitbox de la lengua para un comportamiento más realista").
 *   [**Característica 3 (si aplica):**] Describe cualquier configuración o ajuste (ej. "Configurable a través de CVars para ajustar la dificultad").
-
-## Instalación | 安裝
-
-1.  Asegúrate de tener [SourceMod](https://www.sourcemod.net/downloads.php) instalado en tu servidor L4D2.
-2.  Descarga el archivo `smoker_tongue_fix.smx` (o el nombre de tu archivo) de la [página de releases](LINK_A_TU_RELEASES_DE_GITHUB).
-3.  Copia `smoker_tongue_fix.smx` a la carpeta `addons/sourcemod/plugins/` de tu servidor.
-4.  Reinicia tu servidor o recarga los plugins con `sm plugins reload`.
-
-## Comandos (si aplica) | 命令
-
-*(Si tu plugin tiene comandos de chat o de consola para administradores, lístalos aquí. Si no tiene, puedes eliminar esta sección o poner "Ninguno".)*
 
 ## CVars (si aplica) | 配置变量
 
@@ -51,7 +40,7 @@ Un archivo `smoker_tongue_fix.cfg` (o el nombre de tu archivo) se generará auto
 
 *(Aquí puedes listar las versiones de tu plugin y los cambios en cada una)*
 
-**v1.0.0 (YYYY-MM-DD)**
+**v1.0.0 (2026-Abril-03)**
 *   Lanzamiento inicial: Implementada la corrección principal de [**el problema específico**].
 
 ## Complementos Relacionados | 相關插件
