@@ -1,0 +1,33 @@
+name: 🧟 Auto-generar README
+
+on:
+  push:
+    branches: [ "**" ]
+    paths:
+      - "**.sp"
+      - "**.smx"
+      - "generate_readme.py"
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generar README.md
+        run: python generate_readme.py
+
+      - name: Commit y push del README actualizado
+        uses: stefanboroda/git-auto-commit-action@v5
+        with:
+          commit_message: "📄 README actualizado automáticamente"
+          file_pattern: README.md
