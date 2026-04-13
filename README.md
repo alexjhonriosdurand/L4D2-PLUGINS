@@ -1,7 +1,6 @@
 # 🧩 L4D2 Plugins
 
-![L4D2 Plugins Banner](https://dummyimage.com/1200x300/111/ffffff&text=L4D2+Plugins+Hub)
-
+![L4D2 Plugins Banner](https://dummyimage.com/1200x300/000000/ff3b3b&text=L4D2+PLUGINS+HUB+%7C+SOURCE+MOD+PROJECT)
 Plugins personalizados para **Left 4 Dead 2** desarrollados en SourceMod.
 
 ---
