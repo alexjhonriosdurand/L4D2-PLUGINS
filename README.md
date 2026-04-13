@@ -1,90 +1,55 @@
-# 🧟 Control Zombies — Todos Incluidos
+# 🧩 L4D2 Plugins
 
-**Plugin para Left 4 Dead 1 & Left 4 Dead 2 | SourceMod**  
-Autor: **Shadow L4D2** · Versión: **5.0**
+![L4D2 Plugins Banner](https://dummyimage.com/1200x300/111/ffffff&text=L4D2+Plugins+Hub)
 
----
-
-## 📋 Descripción
-
-**Control Zombies** es un plugin de SourceMod para **Left 4 Dead 1 y Left 4 Dead 2** que permite gestionar en tiempo real el comportamiento de todos los tipos de zombies del juego — comunes, especiales y raros — directamente desde un menú interactivo en el chat.
-
-Ideal para servidores cooperativos que quieren personalizar la dificultad y la experiencia de juego sin necesidad de reiniciar el mapa ni editar archivos de configuración manualmente.
+Plugins personalizados para **Left 4 Dead 2** desarrollados en SourceMod.
 
 ---
 
-## ⚙️ Características
+## 📦 Plugins
 
-- 🔛 **Activar / Desactivar el Spawn** de zombies en tiempo real
-- 🔢 **Ajustar la cantidad** de zombies que aparecen
-- 💨 **Controlar la velocidad** de movimiento de los zombies
-- ❤️ **Modificar la vida** de los zombies
-- ⚔️ **Cambiar el daño** que infligen los zombies
-- 🔁 **Gestionar el respawn** de infectados especiales
-- Aplica a **todos los tipos**: comunes, especiales y raros
+### 🧪 Control Zombies *(experimental)*
+Control dinámico del comportamiento de los zombies en tiempo real.
+
+📁 `scripting/l4d2_control_total_zombie.sp`  
+⚠️ No probado completamente, puede contener errores
 
 ---
 
-## 🛠️ Requisitos
+### 🧪 L4D2 Machine *(sin probar)*
+Plugin agregado al repositorio pero aún no ha sido testeado.
 
-- [Metamod:Source](https://www.metamodsource.net/) 1.12 o superior
-- [SourceMod](https://www.sourcemod.net/) 1.12 o superior
-- Left 4 Dead **1** o Left 4 Dead **2**
-
----
-
-## 📦 Instalación
-
-1. Asegúrate de tener **Metamod:Source** y **SourceMod** instalados correctamente.
-2. Verifica que el archivo `.vdf` de Metamod esté en:
-   ```
-   left4dead2/addons/metamod.vdf
-   ```
-   Sin este archivo Metamod y SourceMod **no cargan**.
-3. Descarga el archivo `l4d2_control_total_zombie.smx` (compilado) o compila el `.sp` tú mismo.
-4. Copia el archivo `.smx` a la carpeta:
-   ```
-   addons/sourcemod/plugins/
-   ```
-5. Reinicia el mapa o escribe `sm plugins load l4d2_control_total_zombie` en la consola.
+📁 `scripting/l4d2_machine.sp`  
+⚠️ Estado desconocido
 
 ---
 
-## 🎮 Comandos
+### ✅ Smoker Tongue Pull Fix *(estable)*
+Corrige el comportamiento del tongue pull del Smoker.
 
-| Comando | Descripción |
-|---|---|
-| `!zmenu` / `sm_zmenu` | Abre el menú principal de control de zombies |
-| `!zsalir` / `sm_zsalir` | Cierra / sale del menú |
-
-> Los comandos fueron renombrados a `zm*` para evitar conflictos con otros plugins que usen `sm_menu` o `sm_salir`.
+✔ Funcional en servidores
 
 ---
 
-## 📁 Estructura del repositorio
+## 📊 Estado general
 
-```
-📂 l4d2-control-zombies/
-├── scripting/
-│   └── l4d2_control_total_zombie.sp   ← Código fuente
-├── plugins/
-│   └── l4d2_control_total_zombie.smx  ← Plugin compilado (opcional)
-└── README.md
-```
+| Plugin | Estado |
+|--------|--------|
+| Control Zombies | 🟡 Experimental |
+| L4D2 Machine | 🔴 Sin probar |
+| Smoker Fix | 🟢 Estable |
 
 ---
 
-## 📝 Notas
+## 🧠 Información del proyecto
 
-- Este plugin fue desarrollado para el servidor cooperativo **SAFE ROOM — COOP V2**.
-- Los ajustes se aplican en tiempo real sin necesidad de reiniciar el mapa.
+Repositorio tipo **hub de plugins para Left 4 Dead 2**, enfocado en:
 
----
-
-## 📜 Licencia
-
-Proyecto de código abierto. Libre para usar y modificar con crédito al autor original.
+- Sistemas en desarrollo  
+- Fixes de mecánicas del juego  
+- Pruebas de gameplay  
+- Herramientas para servidores  
 
 ---
 
-> Hecho con ❤️ para la comunidad L4D2 por **Shadow L4D2**
+## 📁 Estructura
