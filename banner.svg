@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
+  <defs>
+    <!-- Fondo principal -->
+    <linearGradient id="bgMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060000"/>
+      <stop offset="45%" style="stop-color:#120000"/>
+      <stop offset="100%" style="stop-color:#060000"/>
+    </linearGradient>
+
+    <!-- Glow rojo central -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#ff1500;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#ff1500;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Glow lateral izquierdo -->
+    <radialGradient id="leftGlow" cx="15%" cy="50%" r="30%">
+      <stop offset="0%" style="stop-color:#ff2200;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#ff2200;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Filtro glow texto -->
+    <filter id="textGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Filtro glow suave -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Filtro glow fuerte -->
+    <filter id="hardGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Textura ruido (simulada con patrón) -->
+    <pattern id="noise" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <circle cx="1" cy="1" r="0.4" fill="#ff0000" opacity="0.03"/>
+      <circle cx="3" cy="3" r="0.3" fill="#ff0000" opacity="0.02"/>
+    </pattern>
+
+    <!-- Patrón de grid táctico -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#300000" stroke-width="0.4"/>
+    </pattern>
+
+    <!-- Clip principal -->
+    <clipPath id="mainClip">
+      <rect width="900" height="280" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#mainClip)">
+
+    <!-- === FONDO === -->
+    <rect width="900" height="280" fill="url(#bgMain)"/>
+    <rect width="900" height="280" fill="url(#grid)" opacity="0.6"/>
+    <rect width="900" height="280" fill="url(#centerGlow)"/>
+    <rect width="900" height="280" fill="url(#leftGlow)"/>
+    <rect width="900" height="280" fill="url(#noise)"/>
+
+    <!-- === LÍNEAS DECORATIVAS HORIZONTALES === -->
+    <line x1="0" y1="1" x2="900" y2="1" stroke="#330000" stroke-width="0.6"/>
+    <line x1="0" y1="279" x2="900" y2="279" stroke="#330000" stroke-width="0.6"/>
+    <line x1="0" y1="18" x2="900" y2="18" stroke="#220000" stroke-width="0.4"/>
+    <line x1="0" y1="262" x2="900" y2="262" stroke="#220000" stroke-width="0.4"/>
+
+    <!-- === BORDE EXTERIOR === -->
+    <rect x="1" y="1" width="898" height="278" rx="5" fill="none" stroke="#550000" stroke-width="1.5"/>
+    <rect x="5" y="5" width="890" height="270" rx="4" fill="none" stroke="#330000" stroke-width="0.6"/>
+
+    <!-- === ELEMENTO IZQUIERDO: Logo zombie / crosshair === -->
+    <!-- Crosshair externo -->
+    <g filter="url(#softGlow)" opacity="0.7">
+      <circle cx="140" cy="140" r="75" fill="none" stroke="#441100" stroke-width="0.8" stroke-dasharray="3,7"/>
+      <circle cx="140" cy="140" r="55" fill="none" stroke="#551100" stroke-width="0.6" stroke-dasharray="2,5"/>
+      <circle cx="140" cy="140" r="38" fill="none" stroke="#cc2200" stroke-width="1.2"/>
+      <!-- Líneas cruzadas -->
+      <line x1="140" y1="70" x2="140" y2="105" stroke="#cc2200" stroke-width="1.5"/>
+      <line x1="140" y1="175" x2="140" y2="210" stroke="#cc2200" stroke-width="1.5"/>
+      <line x1="70" y1="140" x2="105" y2="140" stroke="#cc2200" stroke-width="1.5"/>
+      <line x1="175" y1="140" x2="210" y2="140" stroke="#cc2200" stroke-width="1.5"/>
+    </g>
+
+    <!-- Fondo del logo circular -->
+    <circle cx="140" cy="140" r="35" fill="#0d0000" stroke="#cc2200" stroke-width="1.8" filter="url(#softGlow)"/>
+
+    <!-- Calavera zombie dentro del círculo -->
+    <g filter="url(#softGlow)">
+      <!-- Cabeza -->
+      <ellipse cx="140" cy="133" rx="16" ry="17" fill="none" stroke="#dd2200" stroke-width="1.4"/>
+      <!-- Ojos brillantes -->
+      <ellipse cx="133" cy="130" rx="4" ry="4.5" fill="#ff2200" opacity="0.95"/>
+      <ellipse cx="147" cy="130" rx="4" ry="4.5" fill="#ff2200" opacity="0.95"/>
+      <circle cx="133" cy="131" r="2" fill="#0d0000"/>
+      <circle cx="147" cy="131" r="2" fill="#0d0000"/>
+      <!-- Punto de luz en ojos -->
+      <circle cx="132" cy="129" r="0.8" fill="#ff8866"/>
+      <circle cx="146" cy="129" r="0.8" fill="#ff8866"/>
+      <!-- Nariz -->
+      <path d="M138 137 L140 141 L142 137" fill="none" stroke="#aa2200" stroke-width="1"/>
+      <!-- Boca dientes -->
+      <rect x="132" y="143" width="16" height="5" rx="1.5" fill="none" stroke="#aa2200" stroke-width="1"/>
+      <line x1="137" y1="143" x2="137" y2="148" stroke="#aa2200" stroke-width="0.7"/>
+      <line x1="140" y1="143" x2="140" y2="148" stroke="#aa2200" stroke-width="0.7"/>
+      <line x1="143" y1="143" x2="143" y2="148" stroke="#aa2200" stroke-width="0.7"/>
+    </g>
+
+    <!-- Marcas angulares en esquinas del logo -->
+    <g stroke="#cc2200" stroke-width="1.5" fill="none" opacity="0.8">
+      <path d="M100 100 L100 110 L110 110"/>
+      <path d="M180 100 L180 110 L170 110"/>
+      <path d="M100 180 L100 170 L110 170"/>
+      <path d="M180 180 L180 170 L170 170"/>
+    </g>
+
+    <!-- === SEPARADOR VERTICAL === -->
+    <line x1="230" y1="40" x2="230" y2="240" stroke="#440000" stroke-width="1"/>
+    <line x1="232" y1="40" x2="232" y2="240" stroke="#220000" stroke-width="0.4"/>
+    <!-- Rombos en el separador -->
+    <polygon points="231,40 235,50 231,60 227,50" fill="#660000"/>
+    <polygon points="231,220 235,230 231,240 227,230" fill="#660000"/>
+    <circle cx="231" cy="140" r="3" fill="#cc2200" filter="url(#softGlow)"/>
+
+    <!-- === TEXTO PRINCIPAL === -->
+    <!-- Etiqueta superior -->
+    <text x="290" y="68" font-family="'Courier New', Courier, monospace" font-size="11" fill="#663300" letter-spacing="5" font-weight="400">◆ SOURCEMOD REPOSITORY ◆</text>
+
+    <!-- Título L4D2 -->
+    <text x="285" y="140" font-family="'Courier New', Courier, monospace" font-weight="900" font-size="72" fill="#cc1100" letter-spacing="-2" filter="url(#textGlow)">L4D2</text>
+
+    <!-- Línea roja bajo L4D2 -->
+    <rect x="285" y="150" width="370" height="2" fill="#cc1100" opacity="0.5" filter="url(#softGlow)"/>
+    <rect x="285" y="148" width="120" height="1" fill="#ff3300" opacity="0.8"/>
+
+    <!-- Subtítulo PLUGINS HUB -->
+    <text x="288" y="185" font-family="'Courier New', Courier, monospace" font-weight="700" font-size="28" fill="#ff3300" letter-spacing="8" filter="url(#softGlow)">PLUGINS HUB</text>
+
+    <!-- Texto descriptivo -->
+    <text x="290" y="215" font-family="'Courier New', Courier, monospace" font-size="11.5" fill="#773322" letter-spacing="2">Custom SourceMod plugins for Left 4 Dead 2 servers</text>
+
+    <!-- === PANEL DERECHO: stats / tags === -->
+    <rect x="690" y="50" width="175" height="180" rx="3" fill="#0d0000" stroke="#330000" stroke-width="1"/>
+    <rect x="690" y="50" width="175" height="22" rx="3" fill="#1a0000"/>
+    <text x="777" y="65" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="9" fill="#884422" letter-spacing="3">SYS.INFO</text>
+
+    <!-- Items del panel -->
+    <g font-family="'Courier New', Courier, monospace" font-size="10" fill="#993322">
+      <!-- Item 1 -->
+      <text x="705" y="95">▸ PLATFORM</text>
+      <text x="705" y="109" fill="#cc4422" font-size="11" font-weight="700">SourceMod 1.12</text>
+      <line x1="705" y1="115" x2="855" y2="115" stroke="#330000" stroke-width="0.6"/>
+
+      <!-- Item 2 -->
+      <text x="705" y="130">▸ GAME</text>
+      <text x="705" y="144" fill="#cc4422" font-size="11" font-weight="700">Left 4 Dead 2</text>
+      <line x1="705" y1="150" x2="855" y2="150" stroke="#330000" stroke-width="0.6"/>
+
+      <!-- Item 3 -->
+      <text x="705" y="165">▸ MODE</text>
+      <text x="705" y="179" fill="#cc4422" font-size="11" font-weight="700">Cooperative</text>
+      <line x1="705" y1="185" x2="855" y2="185" stroke="#330000" stroke-width="0.6"/>
+
+      <!-- Item 4 -->
+      <text x="705" y="200">▸ AUTHOR</text>
+      <text x="705" y="214" fill="#ff4422" font-size="11" font-weight="700">Shadow L4D2</text>
+    </g>
+
+    <!-- === BARRA INFERIOR === -->
+    <rect x="5" y="248" width="890" height="1" fill="#330000"/>
+    <!-- Tags en barra inferior -->
+    <g font-family="'Courier New', Courier, monospace" font-size="9" fill="#551111" letter-spacing="2">
+      <text x="30" y="268">[ SP ]</text>
+      <text x="80" y="268">[ L4D2 ]</text>
+      <text x="140" y="268">[ COOP ]</text>
+      <text x="200" y="268">[ SOURCEMOD ]</text>
+      <text x="300" y="268">[ ZOMBIES ]</text>
+      <text x="375" y="268">[ SERVER ]</text>
+      <text x="445" y="268">[ PLUGINS ]</text>
+    </g>
+    <!-- Punto parpadeante (simulado) -->
+    <circle cx="860" cy="263" r="3" fill="#cc2200" opacity="0.9" filter="url(#softGlow)"/>
+    <circle cx="840" cy="263" r="2" fill="#660000"/>
+    <circle cx="820" cy="263" r="2" fill="#440000"/>
+
+  </g>
+</svg>
