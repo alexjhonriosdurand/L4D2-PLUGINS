@@ -1,52 +1,40 @@
 # 🧩 L4D2 Plugins Hub
 
 <p align="center">
-  <img src="logo.svg" width="160"/>
+  <img src="assets/logo.svg" width="160"/>
 </p>
 
 <p align="center">
-  <img src="banner.svg" width="900"/>
+  <img src="assets/banner.svg" width="900"/>
 </p>
 
-Repositorio de plugins personalizados para **Left 4 Dead 2** desarrollados en SourceMod.
-
-Este proyecto funciona como un hub de desarrollo donde se agrupan distintos sistemas, fixes y pruebas para servidores personalizados.
+Repositorio de plugins personalizados para **Left 4 Dead 2** desarrollados en SourceMod.  
+Funciona como un hub de desarrollo donde se agrupan distintos sistemas, fixes y pruebas para servidores personalizados.
 
 ---
 
 ## 🎯 Objetivo del proyecto
 
-El objetivo de este repositorio es:
-
-- Crear y probar mecánicas personalizadas para L4D2
-- Mejorar o corregir comportamientos del juego
-- Desarrollar herramientas para servidores cooperativos
+- Crear y probar mecánicas personalizadas para L4D2  
+- Mejorar o corregir comportamientos del juego  
+- Desarrollar herramientas para servidores cooperativos  
 - Mantener código modular y fácil de expandir
 
 ---
 
 ## 📦 Plugins incluidos
 
-### 🧪 Control Zombies *(experimental)*
-Sistema que permite controlar el comportamiento de los zombies en tiempo real.
+### ✅ Molotv Shove *(funciona)*
+Empuja a los infectados con molotovs y los enciende.  
+[Más info](Molotv Shove/README.md)
 
-📁 `scripting/l4d2_control_total_zombie.sp`  
-⚠️ No probado completamente, puede contener errores o fallos en servidor
+### ✅ Vomitjar Shove *(funciona)*
+Aplica efectos al empujar a los vomitadores.  
+[Más info](Vomitjar Shove/README.md)
 
----
-
-### 🧪 L4D2 Machine *(sin probar)*
-Plugin en fase inicial de desarrollo, aún sin validación en entorno real.
-
-📁 `scripting/l4d2_machine.sp`  
-⚠️ Estado desconocido / experimental
-
----
-
-### ✅ Smoker Tongue Pull Fix *(estable)*
-Corrige el comportamiento del “tongue pull” del Smoker.
-
-✔ Probado y funcional en servidores
+### ✅ Smoker Tongue Pull Fix *(funciona)*
+Corrige el comportamiento del “tongue pull” del Smoker.  
+[Más info](L4d2 Smoker Tongue Pull Fix/README.md)
 
 ---
 
@@ -54,50 +42,35 @@ Corrige el comportamiento del “tongue pull” del Smoker.
 
 | Plugin | Estado | Descripción |
 |--------|--------|-------------|
-| Control Zombies | 🟡 Experimental | Sistema de control de infectados |
-| L4D2 Machine | 🔴 Sin probar | Plugin en desarrollo inicial |
-| Smoker Fix | 🟢 Estable | Fix funcional del juego |
+| Molotv Shove | 🟢 Funciona | Plugin funcional |
+| Vomitjar Shove | 🟢 Funciona | Plugin funcional |
+| Smoker Fix | 🟢 Funciona | Fix funcional del juego |
 
 ---
 
-## 🧠 Información del repositorio
-
-Este repositorio no es un solo plugin, sino una **colección de sistemas independientes**.
-
-Cada plugin puede:
-- Ser experimental
-- Estar en desarrollo
-- O estar listo para uso en servidor
-
----
-
-## 📁 Estructura del proyecto
+## 📁 Estructura del repositorio
 
 ---
 
 ## 🚧 Estado de desarrollo
 
-- 🟢 Estable → listo para servidores
-- 🟡 Experimental → en pruebas o desarrollo activo
-- 🔴 Sin probar → sin validación en entorno real
+- 🟢 Funciona → listo para servidores  
 
 ---
 
 ## ⚙️ Filosofía del proyecto
 
-Este proyecto está enfocado en:
-
-- Experimentación con mecánicas de Left 4 Dead 2
-- Desarrollo de plugins modulares en SourceMod
-- Pruebas constantes en servidores personalizados
+- Experimentación con mecánicas de L4D2  
+- Desarrollo de plugins modulares en SourceMod  
+- Pruebas constantes en servidores personalizados  
 - Evolución progresiva del gameplay
 
 ---
 
 ## 🧠 Notas importantes
 
-- Algunos plugins pueden cambiar o romperse con actualizaciones
-- No todos están listos para uso en producción
+- Algunos plugins pueden cambiar o romperse con actualizaciones  
+- No todos están listos para uso en producción  
 - Se recomienda probar en servidores de test
 
 ---
