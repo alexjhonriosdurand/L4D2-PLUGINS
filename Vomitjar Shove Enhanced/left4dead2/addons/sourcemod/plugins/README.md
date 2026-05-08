@@ -86,14 +86,6 @@ addons/
 
 ---
 
-## 🔧 Compilación
-
-Compila con el compilador online de SourceMod:
-
-🔗 [https://www.sourcemod.net/compiler.php](https://www.sourcemod.net/compiler.php)
-
-Requiere los includes estándar: `sourcemod`, `sdktools`.
-
 ---
 
 ## 📝 Changelog
