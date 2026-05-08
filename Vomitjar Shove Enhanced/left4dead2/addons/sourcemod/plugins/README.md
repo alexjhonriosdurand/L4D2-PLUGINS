@@ -42,7 +42,7 @@ left 4 dead 2/left4dead2/addons/sourcemod/plugins
 ---
 
 ## 📥 Descarga
-- Plugin compilado `.smx`: [GitHub - Vomitjar Shove Enhanced]([https://github.com/alexjhonriosdurand/L4D2-PLUGINS](https://github.com/alexjhonriosdurand/L4D2-PLUGINS/tree/main/Vomitjar%20Shove%20Enhanced/left4dead2/addons/sourcemod/plugins))
+- Plugin compilado `.smx`: [GitHub - Vomitjar Shove Enhanced](https://github.com/alexjhonriosdurand/L4D2-PLUGINS/tree/main/Vomitjar%20Shove%20Enhanced/left4dead2/addons/sourcemod/plugins)
 
 ---
 
